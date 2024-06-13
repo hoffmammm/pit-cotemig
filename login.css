@@ -2,4 +2,63 @@
     box-sizing:0;
     padding: 0;
     }
-    
+
+body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+.welcome {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+.login {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+ }
+img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+button {
+        width: 100%;
+        padding: 10px;
+        background-color: #6a0dad;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+button:hover {
+        background-color: #4a086b;
+    }
+.options {
+        margin-top: 20px;
+    }
+button#signup {
+        margin-right: 10px;
+        background-color: #9c27b0;
+    }
+button#forgotPassword {
+        background-color: #3f51b5;
+    }
