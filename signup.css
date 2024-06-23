@@ -9,14 +9,14 @@ html {
     background-color: #3a0647;
 }
 
-.login-container {
+.signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.login-box {
+.signup-box {
     width: 400px;
     background-color: #3a0647;
     color: #ffffff;
@@ -26,7 +26,7 @@ html {
     text-align: center;
 }
 
-.login-box h2 {
+.signup-box h2 {
     margin-bottom: 20px;
 }
 
@@ -63,30 +63,34 @@ button {
 button:hover {
     background-color: rgb(87, 4, 101);
 }
-
+.mensagem-sucesso {
+    color: green;
+    font-size: 0.9rem;
+    display: none;
+    margin-top: 10px;
+}
 .mensagem-erro {
     color: red;
     font-size: 0.9rem;
-    display: none; 
+    display: none;
     margin-top: 10px;
 }
-
-.signup-link {
+.login-link {
     margin-top: 20px;
     color: #ffffff;
 }
 
-.signup-link a {
+.login-link a {
     color: #ffffff;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 
-.signup-link a:hover {
+.login-link a:hover {
     color: #dddddd;
 }
 @media (max-width: 600px) {
-    .login-box {
+    .signup-box {
         width: 90%;
         padding: 20px;
     }

@@ -1,14 +1,20 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-});
-
-document.getElementById("signup").addEventListener("click", function() {
-    alert("Implemente a funcionalidade de criar conta!");
-});
-
-document.getElementById("forgotPassword").addEventListener("click", function() {
-    var email = prompt("Digite seu e-mail para recuperar a senha:");
-    if (email) {
-        alert("Um e-mail de recuperação foi enviado para " + email);
+const formLogin = document.getElementById('form-login');
+if (formLogin) {
+    formLogin.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        if (!username || !password) {
+            exibirMensagemErro('Por favor, preencha todos os campos.');
+            return;
+        }
+        window.location.href = 'home.html';
+    });
+}
+function exibirMensagemErro(mensagem) {
+    const mensagemErroElement = document.getElementById('mensagem-erro');
+    if (mensagemErroElement) {
+        mensagemErroElement.innerText = mensagem;
+        mensagemErroElement.style.display = 'block'; 
     }
-});
+}
